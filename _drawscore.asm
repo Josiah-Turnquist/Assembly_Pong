@@ -58,7 +58,7 @@ sc1:
      mov eax, p1score
      call WriteDec
      popad
-                                                       ; score 1
+                                                       ; score 2
      mov ecx, boardWidth
      sub ecx, 17d * 2
      sub ecx, SCORE_OFFSET
@@ -74,7 +74,7 @@ sc2:
      call WriteDec
 
      mov ecx, SCORE_OFFSET
-sc3:
+sc3:                                              ; add extra gui on the end per offset
      mov edx, space
      call WriteString
      loop sc3
